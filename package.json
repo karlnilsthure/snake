@@ -1,0 +1,25 @@
+{
+  "name": "snake",
+  "version": "1.0.0",
+  "description": "snake game",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlnilsthure/snake.git"
+  },
+  "author": "Nils Andersson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karlnilsthure/snake/issues"
+  },
+  "homepage": "https://github.com/karlnilsthure/snake#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^26.3.0"
+  }
+}

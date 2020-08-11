@@ -18,7 +18,7 @@ let food = createFood();
 
 let d = "RIGHT";
 
-const direction = () => {
+const direction = (event) => {
   const key = event.keyCode;
 
   if (key === 37 && d !== "RIGHT") {
@@ -43,6 +43,7 @@ const direction = () => {
 document.addEventListener("keydown", direction);
 
 const gameOver = () => {
+  canvas.style.border = "30px solid orange";
   clearInterval(game);
 };
 
@@ -106,8 +107,8 @@ const draw = () => {
     snakeY > 20 * box ||
     isColliding(newHead, snake)
   ) {
+    alert("Game Over");
     gameOver();
-    canvas.style.border = "30px solid orange";
   }
 
   snake.unshift(newHead);
